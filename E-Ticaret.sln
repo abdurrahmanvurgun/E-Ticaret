@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-TicaretUI", "E-Ticaret\E-TicaretUI.csproj", "{45903303-2FD2-4E76-8F23-026C6C675A61}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{C349453A-FDAC-4DBD-BD0E-E6820D3246AA}"
@@ -14,6 +15,19 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{EEA4A950-2E56-4BD1-9AFC-F54957C3EF84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Ticaret-API", "E-Ticaret-API\E-Ticaret-API.csproj", "{A3283A58-97A8-4084-9212-E1E9A7263263}"
+=======
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-TicaretUI", "E-Ticaret\E-TicaretUI.csproj", "{45903303-2FD2-4E76-8F23-026C6C675A61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{C349453A-FDAC-4DBD-BD0E-E6820D3246AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{A3BC0E7F-526F-4BE0-A3B2-592F2CA0988A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOLayer", "DTOLayer\DTOLayer.csproj", "{5AC8133E-6F40-47E7-90B9-4F3738AC00F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{EEA4A950-2E56-4BD1-9AFC-F54957C3EF84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-TicaretAPI", "E-TicaretAPI\E-TicaretAPI.csproj", "{EDC7C205-E90A-4779-9E13-BB5B6AABE550}"
+>>>>>>> 84cae51c9f677a747e36041022abe75ce8838c92
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +55,17 @@ Global
 		{EEA4A950-2E56-4BD1-9AFC-F54957C3EF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEA4A950-2E56-4BD1-9AFC-F54957C3EF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEA4A950-2E56-4BD1-9AFC-F54957C3EF84}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{A3283A58-97A8-4084-9212-E1E9A7263263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3283A58-97A8-4084-9212-E1E9A7263263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3283A58-97A8-4084-9212-E1E9A7263263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3283A58-97A8-4084-9212-E1E9A7263263}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{EDC7C205-E90A-4779-9E13-BB5B6AABE550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC7C205-E90A-4779-9E13-BB5B6AABE550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC7C205-E90A-4779-9E13-BB5B6AABE550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC7C205-E90A-4779-9E13-BB5B6AABE550}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 84cae51c9f677a747e36041022abe75ce8838c92
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

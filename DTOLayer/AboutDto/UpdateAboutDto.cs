@@ -9,8 +9,14 @@ namespace SignalR.DtoLayer.AboutDto
     public class UpdateAboutDto
     {
         public int AboutID { get; set; }
+<<<<<<< HEAD
         public string? ImageUrl { get; set; }
         public string? Title { get; set; }
         public string? Description { get; set; }
+=======
+        public string ImageUrl { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+>>>>>>> 84cae51c9f677a747e36041022abe75ce8838c92
     }
 }

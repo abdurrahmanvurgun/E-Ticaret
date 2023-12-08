@@ -7,7 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<SignalRContext>();
+<<<<<<< HEAD
 //builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<SignalRContext>();
+=======
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<SignalRContext>();
+>>>>>>> 84cae51c9f677a747e36041022abe75ce8838c92
 
 var app = builder.Build();
 

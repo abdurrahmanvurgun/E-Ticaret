@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 ﻿
+=======
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+>>>>>>> 84cae51c9f677a747e36041022abe75ce8838c92
 using Microsoft.EntityFrameworkCore;
 using SignalR.EntityLayer.Entities;
 using SignalR.EntiyLayer.Entities;
 
 namespace SignalR.DataAccessLayer.Concrete
 {
+<<<<<<< HEAD
     public class SignalRContext : DbContext
+=======
+    public class SignalRContext : IdentityDbContext<AppRole, AppRole, int>
+>>>>>>> 84cae51c9f677a747e36041022abe75ce8838c92
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
