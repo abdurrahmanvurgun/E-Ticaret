@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTOLayer", "DTOLayer\DTOLay
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{EEA4A950-2E56-4BD1-9AFC-F54957C3EF84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-Ticaret-API", "E-Ticaret-API\E-Ticaret-API.csproj", "{A3283A58-97A8-4084-9212-E1E9A7263263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-Ticaret-API", "E-Ticaret-API\E-Ticaret-API.csproj", "{A3283A58-97A8-4084-9212-E1E9A7263263}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
