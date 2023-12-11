@@ -1,10 +1,8 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DataAccessLayer.Concrete;
-using SignalR.DtoLayer.FeatureDto;
 using SignalR.DtoLayer.ProductDto;
 using SignalR.EntiyLayer.Entities;
 
@@ -33,8 +31,8 @@ namespace SignalRApi.Controllers
         public IActionResult ProductCount()
         {
             return Ok(_productService.TProductCount());
-        }  
-        
+        }
+
         [HttpGet("TotalPriceByDrinkCategory")]
         public IActionResult TotalPriceByDrinkCategory()
         {

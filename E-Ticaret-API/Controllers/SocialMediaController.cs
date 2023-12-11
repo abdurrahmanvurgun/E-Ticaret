@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DTOLayer.SocialMediaDto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;

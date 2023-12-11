@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>E_Ticaret</RootNamespace>
+    <RootNamespace>E_TicaretUI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

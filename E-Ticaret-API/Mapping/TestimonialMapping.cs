@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SignalR.DtoLayer.TestimonialDto;
+using DTOLayer.TestimonialDto;
 using SignalR.EntityLayer.Entities;
 
 namespace SignalRApi.Mapping

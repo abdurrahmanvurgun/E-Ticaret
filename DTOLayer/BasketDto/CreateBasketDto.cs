@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.DtoLayer.BasketDto
+namespace DTOLayer.BasketDto
 {
     public class CreateBasketDto
     {
