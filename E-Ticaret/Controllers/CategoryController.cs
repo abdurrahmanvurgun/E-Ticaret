@@ -20,7 +20,11 @@ namespace E_Ticaret.Controllers
             var responseMessage = await client.GetAsync("https://localhost:7096/api/Category");
             if (responseMessage.IsSuccessStatusCode)
             {
+<<<<<<< HEAD
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
+=======
+                var jsonData=await responseMessage.Content.ReadAsStringAsync();
+>>>>>>> 30e727ec6a21607bab3a809aa0ee3c530066213c
                 var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
                 return View(values);
             }
@@ -35,8 +39,13 @@ namespace E_Ticaret.Controllers
         public async Task<IActionResult> CreateCategory(CreateCategoryDto createCategoryDto)
         {
             createCategoryDto.Status = true;
+<<<<<<< HEAD
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createCategoryDto);
+=======
+            var client=_httpClientFactory.CreateClient();
+            var jsonData=JsonConvert.SerializeObject(createCategoryDto);
+>>>>>>> 30e727ec6a21607bab3a809aa0ee3c530066213c
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PostAsync("https://localhost:7096/api/Category", stringContent);
             if (responseMessage.IsSuccessStatusCode)
@@ -54,6 +63,7 @@ namespace E_Ticaret.Controllers
             {
                 return RedirectToAction("Index");
             }
+<<<<<<< HEAD
             return View();
         }
         [HttpGet]
@@ -80,6 +90,8 @@ namespace E_Ticaret.Controllers
             {
                 return RedirectToAction("Index");
             }
+=======
+>>>>>>> 30e727ec6a21607bab3a809aa0ee3c530066213c
             return View();
         }
     }
