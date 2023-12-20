@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DTOLayer.BookingDto;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.EntiyLayer.Entities;
 using Microsoft.AspNetCore.Mvc;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DtoLayer.BookingDto;
-using SignalR.EntiyLayer.Entities;
 
-namespace SignalRApi.Controllers
+namespace E_Ticaret.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -32,7 +31,7 @@ namespace SignalRApi.Controllers
                 Name = createBookingDto.Name,
                 PersonCount = createBookingDto.PersonCount,
                 Phone = createBookingDto.Phone,
-                Description= createBookingDto.Description
+                Description = createBookingDto.Description
             };
             _bookingService.TAdd(booking);
             return Ok("Rezervasyon Yapıldı");
@@ -54,7 +53,8 @@ namespace SignalRApi.Controllers
                 Name = updateBookingDto.Name,
                 PersonCount = updateBookingDto.PersonCount,
                 Phone = updateBookingDto.Phone,
-                Date = updateBookingDto.Date
+                Date = updateBookingDto.Date,
+                Description = updateBookingDto.Description
             };
             _bookingService.TUpdate(booking);
             return Ok("Rezervasyon Güncellendi");
@@ -71,11 +71,11 @@ namespace SignalRApi.Controllers
             _bookingService.BookingStatusApproved(id);
             return Ok("Rezervasyon Açıklaması Değiştirildi");
         }
-		[HttpGet("BookingStatusCancelled/{id}")]
-		public IActionResult BookingStatusCancelled(int id)
-		{
-			_bookingService.BookingStatusCancelled(id);
-			return Ok("Rezervasyon Açıklaması Değiştirildi");
-		}
-	}
+        [HttpGet("BookingStatusCancelled/{id}")]
+        public IActionResult BookingStatusCancelled(int id)
+        {
+            _bookingService.BookingStatusCancelled(id);
+            return Ok("Rezervasyon Açıklaması Değiştirildi");
+        }
+    }
 }

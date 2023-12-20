@@ -1,14 +1,14 @@
-﻿using SignalR.DataAccessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.DataAccessLayer.Repositories;
-using SignalR.EntiyLayer.Entities;
+﻿using E_Ticaret.DataAccessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.DataAccessLayer.Repositories;
+using E_Ticaret.EntiyLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.DataAccessLayer.EntityFramework
+namespace E_Ticaret.DataAccessLayer.EntityFramework
 {
     public class EfDiscountDal : GenericRepository<Discount>, IDiscountDal
     {

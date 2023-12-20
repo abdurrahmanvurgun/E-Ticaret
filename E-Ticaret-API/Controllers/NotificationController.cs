@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DTOLayer.NotificationDto;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.EntityLayer.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DtoLayer.NotificationDto;
-using SignalR.EntityLayer.Entities;
+
 
 namespace SignalRApi.Controllers
 {

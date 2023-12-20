@@ -1,5 +1,5 @@
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.EntityLayer.Entities;
+using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.EntityLayer.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 

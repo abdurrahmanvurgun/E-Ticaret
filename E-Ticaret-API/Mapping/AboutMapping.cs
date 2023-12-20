@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using DTOLayer.AboutDto;
-using SignalR.DtoLayer.AboutDto;
-using SignalR.EntiyLayer.Entities;
+using E_Ticaret.EntityLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class AboutMapping:Profile
     {

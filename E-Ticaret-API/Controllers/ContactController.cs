@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
+using DTOLayer.ContactDto;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.EntityLayer.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DtoLayer.CategoryDto;
-using SignalR.DtoLayer.ContactDto;
-using SignalR.EntityLayer.Entities;
-using SignalR.EntiyLayer.Entities;
+
 
 namespace SignalRApi.Controllers
 {

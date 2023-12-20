@@ -1,9 +1,10 @@
-using SignalR.BusinessLayer.Abstract;
-using SignalR.BusinessLayer.Concrete;
-using SignalR.DataAccessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.DataAccessLayer.EntityFramework;
-using SignalRApi.Hubs;
+
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.BusinessLayer.Concrete;
+using E_Ticaret.DataAccessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.DataAccessLayer.EntityFramework;
+using E_Ticaret.Hubs;
 using System.Reflection;
 using System.Text.Json.Serialization;
 
@@ -100,6 +101,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHub<SignalRHub>("/signalrhub");
+app.MapHub<E_TicaretHub>("/signalrhub");
 
 app.Run();

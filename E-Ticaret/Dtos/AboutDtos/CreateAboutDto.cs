@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace E_TicaretUI.Dtos
+namespace E_Ticaret.Dtos.AboutDtos
 {
     public class CreateAboutDto
     {

@@ -1,13 +1,13 @@
-﻿using SignalR.BusinessLayer.Abstract;
-using SignalR.DataAccessLayer.Abstract;
-using SignalR.EntiyLayer.Entities;
+﻿using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Abstract;
+using E_Ticaret.EntiyLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.BusinessLayer.Concrete
+namespace E_Ticaret.BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {

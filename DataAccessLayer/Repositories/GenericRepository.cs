@@ -1,12 +1,12 @@
-﻿using SignalR.DataAccessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
+﻿using E_Ticaret.DataAccessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.DataAccessLayer.Repositories
+namespace E_Ticaret.DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericDal<T> where T : class
     {

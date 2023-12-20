@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using DTOLayer.TestimonialDto;
-using SignalR.EntityLayer.Entities;
+using E_Ticaret.EntityLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class TestimonialMapping:Profile
     {

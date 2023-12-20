@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using DTOLayer.MessageDto;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.EntityLayer.Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DtoLayer.MessageDto;
-using SignalR.EntityLayer.Entities;
-using SignalR.EntiyLayer.Entities;
+
 
 namespace SignalRApi.Controllers
 {
-	[Route("api/[controller]")]
+    [Route("api/[controller]")]
 	[ApiController]
 	public class MessageController : ControllerBase
 	{

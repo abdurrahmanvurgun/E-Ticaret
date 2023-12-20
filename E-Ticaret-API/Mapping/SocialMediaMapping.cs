@@ -1,9 +1,8 @@
 ﻿using AutoMapper;
 using DTOLayer.SocialMediaDto;
-using SignalR.DtoLayer.SocialMediaDto;
-using SignalR.EntityLayer.Entities;
+using E_Ticaret.EntityLayer.Entities;
 
-namespace SignalRApi.Mapping
+namespace E_Ticaret.Mapping
 {
     public class SocialMediaMapping:Profile
     {

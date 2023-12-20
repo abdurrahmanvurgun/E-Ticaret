@@ -1,5 +1,5 @@
 ﻿
-namespace SignalRApi.Models
+namespace E_Ticaret.Models
 {
     public class ResultBasketListWithProducts
     {
@@ -9,6 +9,6 @@ namespace SignalRApi.Models
         public decimal TotalPrice { get; set; }
         public int ProductID { get; set; }
         public int MenuTableID { get; set; }
-        public string ProductName { get; set; }
+        public string? ProductName { get; set; }
     }
 }

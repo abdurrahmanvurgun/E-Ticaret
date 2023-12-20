@@ -2,12 +2,14 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.EntityLayer.Entities;
-using SignalRApi.Models;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.EntityLayer.Entities;
+using E_Ticaret.Models;
 
-namespace SignalRApi.Controllers
+
+
+namespace E_Ticaret.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

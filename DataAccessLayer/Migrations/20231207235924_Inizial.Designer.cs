@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SignalR.DataAccessLayer.Concrete;
+using E_Ticaret.DataAccessLayer.Concrete;
 
 #nullable disable
 
