@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using SignalR.EntityLayer.Entities;
-using SignalR.EntiyLayer.Entities;
+using E_Ticaret.EntityLayer.Entities;
+using E_Ticaret.EntiyLayer.Entities;
 
-namespace SignalR.DataAccessLayer.Concrete
+namespace E_Ticaret.DataAccessLayer.Concrete
 {
-    public class SignalRContext : DbContext
+    public class DBContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

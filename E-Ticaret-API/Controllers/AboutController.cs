@@ -1,10 +1,9 @@
 ﻿using DTOLayer.AboutDto;
+using E_Ticaret.EntityLayer.Entities;
 using Microsoft.AspNetCore.Mvc;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DtoLayer.AboutDto;
-using SignalR.EntiyLayer.Entities;
+using E_Ticaret.BusinessLayer.Abstract;
 
-namespace SignalRApi.Controllers
+namespace E_Ticaret.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

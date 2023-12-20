@@ -1,13 +1,13 @@
-﻿using SignalR.BusinessLayer.Abstract;
-using SignalR.DataAccessLayer.Abstract;
-using SignalR.EntityLayer.Entities;
+﻿using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Abstract;
+using E_Ticaret.EntityLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.BusinessLayer.Concrete
+namespace E_Ticaret.BusinessLayer.Concrete
 {
     public class SliderManager : ISliderService
     {

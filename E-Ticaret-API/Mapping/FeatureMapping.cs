@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using SignalR.DtoLayer.FeatureDto;
-using SignalR.EntiyLayer.Entities;
+using DTOLayer.FeatureDto;
+using E_Ticaret.EntiyLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class FeatureMapping:Profile
     {

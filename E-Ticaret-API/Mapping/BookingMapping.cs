@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using SignalR.DtoLayer.BookingDto;
-using SignalR.EntiyLayer.Entities;
+using DTOLayer.BookingDto;
+using E_Ticaret.EntiyLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class BookingMapping:Profile
     {

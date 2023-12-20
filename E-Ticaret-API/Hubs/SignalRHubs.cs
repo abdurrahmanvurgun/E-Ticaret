@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.SignalR;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
+﻿using E_Ticaret.BusinessLayer.Abstract;
+using Microsoft.AspNetCore.SignalR;
 
-namespace SignalRApi.Hubs
+
+namespace SignalRHub.Hubs
 {
-    public class SignalRHub : Hub
+    public class SignalRHubs : Hub
     {
         private readonly ICategoryService _categoryService;
         private readonly IProductService _productService;
@@ -13,7 +13,8 @@ namespace SignalRApi.Hubs
         private readonly IMenuTableService _menuTableService;
         private readonly IBookingService _bookingService;
         private readonly INotificationService _notificationService;
-        public SignalRHub(ICategoryService categoryService, IProductService productService, IOrderService orderService, IMoneyCaseService moneyCaseService, IMenuTableService menuTableService, IBookingService bookingService, INotificationService notificationService)
+        public SignalRHubs(ICategoryService categoryService, IProductService productService, IOrderService orderService,
+            IMoneyCaseService moneyCaseService, IMenuTableService menuTableService, IBookingService bookingService, INotificationService notificationService)
         {
             _categoryService = categoryService;
             _productService = productService;

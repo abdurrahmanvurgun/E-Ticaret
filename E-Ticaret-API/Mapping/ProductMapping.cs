@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using SignalR.DtoLayer.ProductDto;
-using SignalR.EntiyLayer.Entities;
+using DTOLayer.ProductDto;
+using E_Ticaret.EntityLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class ProductMapping:Profile
     {

@@ -2,12 +2,14 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.EntityLayer.Entities;
-using SignalRApi.Models;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.EntityLayer.Entities;
+using E_Ticaret.Models;
 
-namespace SignalRApi.Controllers
+
+
+namespace E_Ticaret.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -27,7 +29,7 @@ namespace SignalRApi.Controllers
         [HttpGet("BasketListByMenuTableWithProductName")]
         public IActionResult BasketListByMenuTableWithProductName(int id)
         {
-            using var context = new SignalRContext();
+            using var context = new DBContext();
             var values = context.Baskets.Include(x => x.Product).Where(y => y.MenuTableID == id).Select(z => new ResultBasketListWithProducts
             {
                 BasketID = z.BasketID,
@@ -44,7 +46,7 @@ namespace SignalRApi.Controllers
         public IActionResult CreateBasket(CreateBasketDto createBasketDto)
         {
             //Bahçe 01 --> 45
-            using var context = new SignalRContext();
+            using var context = new DBContext();
             _basketService.TAdd(new Basket()
             {
                 ProductID = createBasketDto.ProductID,

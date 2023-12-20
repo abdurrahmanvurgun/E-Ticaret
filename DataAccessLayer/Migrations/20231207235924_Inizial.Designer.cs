@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using SignalR.DataAccessLayer.Concrete;
+using E_Ticaret.DataAccessLayer.Concrete;
 
 #nullable disable
 
 namespace DataAccessLayer.Migrations
 {
-    [DbContext(typeof(SignalRContext))]
+    [DbContext(typeof(DBContext))]
     [Migration("20231207235924_Inizial")]
     partial class Inizial
     {

@@ -1,36 +1,36 @@
-﻿using SignalR.DataAccessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.DataAccessLayer.Repositories;
-using SignalR.EntiyLayer.Entities;
+﻿using E_Ticaret.DataAccessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.DataAccessLayer.Repositories;
+using E_Ticaret.EntiyLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SignalR.DataAccessLayer.EntityFramework
+namespace E_Ticaret.DataAccessLayer.EntityFramework
 {
     public class EfCategoryDal : GenericRepository<Category>, ICategoryDal
     {
-        public EfCategoryDal(SignalRContext context) : base(context)
+        public EfCategoryDal(DBContext context) : base(context)
         {
         }
 
         public int ActiveCategoryCount()
         {
-            using var context=new SignalRContext();
+            using var context=new DBContext();
             return context.Categories.Where(x => x.Status == true).Count();
         }
 
         public int CategoryCount()
         {
-            using var context = new SignalRContext();
+            using var context = new DBContext();
             return context.Categories.Count();
         }
 
         public int PassiveCategoryCount()
         {
-            using var context = new SignalRContext();
+            using var context = new DBContext();
             return context.Categories.Where(x => x.Status == false).Count();
         }
     }

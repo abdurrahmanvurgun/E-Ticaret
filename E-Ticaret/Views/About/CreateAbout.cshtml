@@ -1,0 +1,40 @@
+﻿@model CreateAboutDto
+@{
+    ViewData["Title"] = "CreateAbout";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Anasayfa Hakkımızda İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Yeni Hakkımızda Yazısı Ekleme Sayfası</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="Title">Başlık Adı</label>
+                                <input type="text" class="form-control form-control-lg" asp-for="Title" id="Title" placeholder="Başlık Adı">
+                            </div>
+                            <div class="form-group">
+                                <label for="ImageUrl">Resim Ekleyin</label>
+                                <input type="text" class="form-control form-control-lg" asp-for="ImageUrl" id="ImageUrl" placeholder="ImageUrl">
+                            </div>
+                            <div class="form-group">
+                                <label for="Description">Açıklama</label>
+                                <textarea cols="5" rows="5" class="form-control form-control-lg" asp-for="Description" id="Description" placeholder="Açıklama Giriniz"></textarea>
+                                @* <input type="text" class="form-control form-control-lg" asp-for="Description" id="Description" placeholder="Açıklama Giriniz"> *@
+                            </div>
+                        </div>
+                        <div class="card-action">
+                            <button type="submit" class="btn btn-primary">Hakkımızda Yazısı Ekle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

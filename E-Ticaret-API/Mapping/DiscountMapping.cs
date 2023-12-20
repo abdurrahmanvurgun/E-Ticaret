@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using SignalR.DtoLayer.DiscountDto;
-using SignalR.EntiyLayer.Entities;
+using DTOLayer.DiscountDto;
+using E_Ticaret.EntiyLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class DiscountMapping:Profile
     {

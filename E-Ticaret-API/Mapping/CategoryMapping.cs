@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using SignalR.DtoLayer.CategoryDto;
-using SignalR.EntiyLayer.Entities;
+using DTOLayer.CategoryDto;
+using E_Ticaret.EntiyLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class CategoryMapping:Profile
     {

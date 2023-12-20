@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
+using DTOLayer.ProductDto;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.EntityLayer.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.DtoLayer.ProductDto;
-using SignalR.EntiyLayer.Entities;
 
 namespace SignalRApi.Controllers
 {
@@ -90,7 +90,7 @@ namespace SignalRApi.Controllers
         [HttpGet("ProductListWithCategory")]
         public IActionResult ProductListWithCategory()
         {
-            var context = new SignalRContext();
+            var context = new DBContext();
             var values = context.Products.Include(x => x.Category).Select(y => new ResultProductWithCategory
             {
                 Description = y.Description,

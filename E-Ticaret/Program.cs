@@ -1,5 +1,4 @@
-using SignalR.DataAccessLayer.Concrete;
-using SignalR.EntityLayer.Entities;
+using E_Ticaret.DataAccessLayer.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<SignalRContext>();
+builder.Services.AddDbContext<DBContext>();
 
 var app = builder.Build();
 

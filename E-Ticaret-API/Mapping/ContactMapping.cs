@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
-using SignalR.DtoLayer.ContactDto;
-using SignalR.EntityLayer.Entities;
+using DTOLayer.ContactDto;
+using E_Ticaret.EntityLayer.Entities;
 
-namespace SignalRApi.Mapping
+
+namespace E_Ticaret.Mapping
 {
     public class ContactMapping:Profile
     {

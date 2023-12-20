@@ -1,11 +1,10 @@
 ﻿using AutoMapper;
+using DTOLayer.ContactDto;
+using E_Ticaret.BusinessLayer.Abstract;
+using E_Ticaret.EntityLayer.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using SignalR.BusinessLayer.Abstract;
-using SignalR.DtoLayer.CategoryDto;
-using SignalR.DtoLayer.ContactDto;
-using SignalR.EntityLayer.Entities;
-using SignalR.EntiyLayer.Entities;
+
 
 namespace SignalRApi.Controllers
 {
@@ -37,10 +36,10 @@ namespace SignalRApi.Controllers
                 Location = createContactDto.Location,
                 Mail = createContactDto.Mail,
                 Phone = createContactDto.Phone,
-                FooterTitle = createContactDto.FooterTitle,
-                OpenDays = createContactDto.OpenDays,
-                OpenDaysDescription = createContactDto.OpenDaysDescription,
-                OpenHours = createContactDto.OpenHours
+                //FooterTitle = createContactDto.FooterDescription,
+                //OpenDays = createContactDto.OpenDays,
+                //OpenDaysDescription = createContactDto.OpenDaysDescription,
+                //OpenHours = createContactDto.OpenHours
             });
             return Ok("İletişim Bilgisi Eklendi");
         }
@@ -67,10 +66,10 @@ namespace SignalRApi.Controllers
                 Location = updateContactDto.Location,
                 Mail = updateContactDto.Mail,
                 Phone = updateContactDto.Phone,
-                FooterTitle = updateContactDto.FooterTitle,
-                OpenDays = updateContactDto.OpenDays,
-                OpenDaysDescription = updateContactDto.OpenDaysDescription,
-                OpenHours = updateContactDto.OpenHours
+                //FooterTitle = updateContactDto.FooterTitle,
+                //OpenDays = updateContactDto.OpenDays,
+                //OpenDaysDescription = updateContactDto.OpenDaysDescription,
+                //OpenHours = updateContactDto.OpenHours
             });
             return Ok("İletişim Bilgisi Güncellendi");
         }
