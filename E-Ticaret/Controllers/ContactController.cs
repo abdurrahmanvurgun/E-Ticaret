@@ -37,8 +37,6 @@ namespace E_TicaretUI.Controllers
             //createContactDto.OpenDays = DateTime.Now.ToShortDateString();
             //createContactDto.OpenDaysDescription = DateTime.Now.ToLongDateString();
             //createContactDto.OpenHours = DateTime.Now.ToString("{0:h hh H HH}");
-           
-
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createContactDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");

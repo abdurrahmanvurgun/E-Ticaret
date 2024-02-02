@@ -1,4 +1,8 @@
 using E_Ticaret.DataAccessLayer.Concrete;
+<<<<<<< HEAD
+=======
+using E_Ticaret.EntityLayer.Entities;
+>>>>>>> e32eec035c75a5982a8917914afda64fd3f36143
 
 var builder = WebApplication.CreateBuilder(args);
 
