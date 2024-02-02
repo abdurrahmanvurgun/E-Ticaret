@@ -14,6 +14,7 @@ namespace SignalRHub.Hubs
         private readonly IMenuTableService _menuTableService;
         private readonly IBookingService _bookingService;
         private readonly INotificationService _notificationService;
+
         public SignalRHubs(ICategoryService categoryService, IProductService productService, IOrderService orderService,
             IMoneyCaseService moneyCaseService, IMenuTableService menuTableService, IBookingService bookingService, INotificationService notificationService)
         {
