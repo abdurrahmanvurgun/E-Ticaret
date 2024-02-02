@@ -100,6 +100,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
 app.MapHub<SignalRHubs>("/signalrhub");
 
 app.Run();

@@ -3,7 +3,6 @@ using E_Ticaret.DataAccessLayer.Concrete;
 using E_Ticaret.DataAccessLayer.Repositories;
 using E_Ticaret.EntiyLayer.Entities;
 
-
 namespace E_Ticaret.DataAccessLayer.EntityFramework
 {
     public class EfFeatureDal : GenericRepository<Feature>, IFeatureDal
