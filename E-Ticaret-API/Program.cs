@@ -4,7 +4,11 @@ using E_Ticaret.BusinessLayer.Concrete;
 using E_Ticaret.DataAccessLayer.Abstract;
 using E_Ticaret.DataAccessLayer.Concrete;
 using E_Ticaret.DataAccessLayer.EntityFramework;
+<<<<<<< HEAD
 using SignalRHub.Hubs;
+=======
+using E_Ticaret.Hubs;
+>>>>>>> e32eec035c75a5982a8917914afda64fd3f36143
 using System.Reflection;
 using System.Text.Json.Serialization;
 
@@ -100,6 +104,10 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+<<<<<<< HEAD
 app.MapHub<SignalRHubs>("/signalrhub");
+=======
+app.MapHub<E_TicaretHub>("/signalrhub");
+>>>>>>> e32eec035c75a5982a8917914afda64fd3f36143
 
 app.Run();

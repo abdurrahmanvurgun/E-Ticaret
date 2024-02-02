@@ -5,6 +5,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+<<<<<<< HEAD
+=======
+using E_Ticaret.DataAccessLayer.Concrete;
+>>>>>>> e32eec035c75a5982a8917914afda64fd3f36143
 
 #nullable disable
 

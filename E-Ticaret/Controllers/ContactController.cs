@@ -34,11 +34,14 @@ namespace E_TicaretUI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateContact(CreateContactDto createContactDto)
         {
+<<<<<<< HEAD
             //createContactDto.OpenDays = DateTime.Now.ToShortDateString();
             //createContactDto.OpenDaysDescription = DateTime.Now.ToLongDateString();
             //createContactDto.OpenHours = DateTime.Now.ToString("{0:h hh H HH}");
            
 
+=======
+>>>>>>> e32eec035c75a5982a8917914afda64fd3f36143
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createContactDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
