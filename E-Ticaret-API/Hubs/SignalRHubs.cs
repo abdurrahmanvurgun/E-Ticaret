@@ -2,10 +2,22 @@
 using Microsoft.AspNetCore.SignalR;
 
 
+<<<<<<< HEAD
 namespace SignalRHub.Hubs
 {
     public class SignalRHubs : Hub
 
+=======
+<<<<<<< HEAD:E-Ticaret-API/Hubs/SignalRHubs.cs
+namespace SignalRHub.Hubs
+{
+    public class SignalRHubs : Hub
+=======
+namespace E_Ticaret.Hubs
+{
+    public class E_TicaretHub : Hub
+>>>>>>> e32eec035c75a5982a8917914afda64fd3f36143:E-Ticaret-API/Hubs/SignalRHub.cs
+>>>>>>> bc99685aa795c230e50027c02146e58cd1f8de44
     {
         private readonly ICategoryService _categoryService;
         private readonly IProductService _productService;
@@ -14,9 +26,18 @@ namespace SignalRHub.Hubs
         private readonly IMenuTableService _menuTableService;
         private readonly IBookingService _bookingService;
         private readonly INotificationService _notificationService;
+<<<<<<< HEAD
 
         public SignalRHubs(ICategoryService categoryService, IProductService productService, IOrderService orderService,
             IMoneyCaseService moneyCaseService, IMenuTableService menuTableService, IBookingService bookingService, INotificationService notificationService)
+=======
+<<<<<<< HEAD:E-Ticaret-API/Hubs/SignalRHubs.cs
+        public SignalRHubs(ICategoryService categoryService, IProductService productService, IOrderService orderService,
+            IMoneyCaseService moneyCaseService, IMenuTableService menuTableService, IBookingService bookingService, INotificationService notificationService)
+=======
+        public E_TicaretHub(ICategoryService categoryService, IProductService productService, IOrderService orderService, IMoneyCaseService moneyCaseService, IMenuTableService menuTableService, IBookingService bookingService, INotificationService notificationService)
+>>>>>>> e32eec035c75a5982a8917914afda64fd3f36143:E-Ticaret-API/Hubs/SignalRHub.cs
+>>>>>>> bc99685aa795c230e50027c02146e58cd1f8de44
         {
             _categoryService = categoryService;
             _productService = productService;
