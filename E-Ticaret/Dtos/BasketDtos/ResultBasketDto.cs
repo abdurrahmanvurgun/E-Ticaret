@@ -1,4 +1,4 @@
-﻿namespace SignalRWebUI.Dtos.BasketDtos
+﻿namespace E_Ticaret.Dtos.BasketDtos
 {
     public class ResultBasketDto
     {
