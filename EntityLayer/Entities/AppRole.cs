@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace E_Ticaret.EntityLayer.Entities
 {
-    public class AppRole : IdentityRole
+    public class AppRole : IdentityRole<int>
     {
     }
 }

@@ -1,8 +1,10 @@
 using E_Ticaret.DataAccessLayer.Concrete;
+using E_Ticaret.EntityLayer.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<DBContext>();
 builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
 
